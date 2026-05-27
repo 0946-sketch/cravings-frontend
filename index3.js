@@ -301,7 +301,7 @@ if (submitBtn) {
     submitBtn.disabled = true;
 
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://cravings-backend-cvte.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, phone, message })
